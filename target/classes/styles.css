@@ -1,0 +1,57 @@
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: rgb(172, 153, 6);
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: rgba(180, 0, 7, 0.83);
+}
+
+.tableView {
+    -fx-base: #1d1d1d;
+-fx-control-inner-background: #1d1d1d;
+-fx-background-color: #1d1d1d;
+-fx-table-cell-border-color: transparent;
+-fx-table-header-border-color: transparent;
+-fx-padding: 5;
+}
+
+.tableView .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.tableView .column-header, .tableView .filler {
+    -fx-size: 18;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+            transparent
+            transparent
+            derive(-fx-base, 80%)
+            transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.tableView .column-header .label {
+    -fx-font-size: 18pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.tableView:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
